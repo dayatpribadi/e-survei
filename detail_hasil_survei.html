@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Finance and Investment HTML Template by Indonez">
+	<meta name="keywords" content="blockit, bootstrap, indonez, handlebars, scss, javascript">
+	<meta name="author" content="Indonez">
+	<meta name="theme-color" content="#DF4478">
+	<!-- critical preload -->
+	<link rel="preload" href="js/vendors/bootstrap.bundle.min.js" as="script">
+	<link rel="preload" href="css/style.css" as="style">
+	<!-- icon preload -->
+	<link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+	<!-- font preload -->
+	<link rel="preload" href="fonts/dm-sans-v11-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/dm-sans-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/select2.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- Touch icon -->
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+	<title>Shared on THEMELOCK.COM - Homepage 3 - Avo HTML Template</title>
+
+	<style>
+		.card-body-hover {
+			background-color: rgba(0, 0, 0, 0.6);
+			/* Background transparan */
+			transform: translateY(100%);
+			transition: transform 0.3s ease;
+		}
+
+		.card:hover .card-body-hover {
+			transform: translateY(0);
+		}
+	</style>
+</head>
+
+<body>
+	<!-- page loader begin -->
+	<div
+		class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden">
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+	</div>
+	<!-- page loader end -->
+	<!-- header begin -->
+	<header class="navbar navbar-expand-lg">
+		<div class="container">
+			<div class="collapse navbar-collapse d-flex justify-content-between d-none d-xl-block" id="navbarNav">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/Logo_pemkab_oi.png" alt="logo" height="50">
+				</a>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">
+							<span class="btn btn-outline-primary rounded-pill"><i
+									class="fas fa-arrow-right fa-sm me-1"></i>Beranda</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="data_hasil_survei.html">
+							<span class="btn btn-outline-primary rounded-pill"><i
+									class="fas fa-arrow-right fa-sm me-1"></i>Data Hasil Survei</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- breadcrumb content begin -->
+	<section class="section-breadcrumb bg-cus">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 position-relative text-center">
+					<h1 class="mt-0 mb-1 ">Hasil Survei</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0">
+							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- breadcrumb content end -->
+	<main>
+		<section class="py-5 card-style-10">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-12">
+						<div class="card shadow-sm border-primary">
+							<div class="card-body justify-content-between align-items-center p-4">
+								<div class="d-flex gap-2">
+									<i class="fa fa-building" style="font-size: 40px;"></i>
+									<div class="text">
+										<span>Dinas Komunikasi Informatika Statitik dan Persandian Kabupaten Ogan
+											Ilir </span>
+										<h6>Total Data Responden : 1</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row d-flex align-items-center gy-3 gy-lg-0 mb-3">
+					<div class="col">
+						<div class="card card-body text-center">
+							<h1 class="text-primary mb-0">
+								<span class="count me-2" data-counter-end="58">58</span>Kategori<span
+									class="text-primary me-2">A</span>
+							</h1>
+							<p class="text-primary mb-4">Total Indeks Persepsi Kualitas Pelayanan (IPKP)</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card card-body text-center">
+							<h1 class="text-primary mb-0">
+								<span class="count" data-counter-end="90">90</span><span class="text-primary">A</span>
+							</h1>
+							<p class="text-primary mb-4">Total Indeks Persepsi Anti Korupsi (IPAK)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-6">
+						<div class="card shadow-sm border-primary">
+							<div class="card-body justify-content-center align-items-center p-4">
+								<h6>Statistik Responden Berdasarkan Jenjang Pendidikan</h6>
+								<div id="chartSatu"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="card shadow-sm border-primary">
+							<div class="card-body justify-content-center align-items-center p-4">
+								<h6>Statistik Responden Berdasarkan Jenjang Usia</h6>
+								<div id="chartDua"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- section content begin -->
+
+	</main>
+	<!-- footer begin -->
+	<footer class="bg-light pb-4 in-avo-footer">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
+				<div class="d-flex justify-content-center text-center mx-auto align-items-center">
+					<img src="img/logo-oi.png" height="60" alt="">
+					<img src="img/logo_diskominfo.png" height="40" alt="">
+					<img src="img/lanjutkerja.png" height="150" alt="">
+					<img src="img/oganilirbangkit.png" height="60" alt="">
+				</div>
+
+				<div class="col-md-12 col-lg-12 text-center small mt-4">
+					<div class="trade-warning">
+						<h6 class="mb-1"><span><i class="fa fa-info-circle fa-sm"></i>Tentang e-Survei</span></h6>
+						<p class="mb-0">
+							E-Survei adalah aplikasi survei online berbasis web yang digunakan untuk menampung pendapat
+							dan pandangan sebagai warga Kabupaten Ogan Ilir</p>
+					</div>
+					<p class="copyright-text">Copyright © 2024 Diskominfo Kab. Ogan Ilir</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- to top begin -->
+	<div class="d-none d-md-block">
+		<a href="#" class="to-top fas fa-arrow-up text-decoration-none text-white"></a>
+	</div>
+	<!-- to top end -->
+	<!-- javascript -->
+	<script src="js/vendors/bootstrap.bundle.min.js"></script>
+	<script src="js/vendors/vanilla-marquee.min.js"></script>
+	<script src="js/utilities.min.js"></script>
+	<script src="js/config-theme.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+	<!-- Include jQuery and Select2 JS/CSS in your page -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// Initialize Select2
+			$('.select2').select2({
+				placeholder: "Select an option",
+				allowClear: true
+			});
+		});
+	</script>
+
+	<script>
+		var options = {
+			series: [44, 55, 41, 17, 15, 78, 9, 10],
+			chart: {
+				width: 380,
+				type: 'donut',
+			},
+			labels: ['SMA', 'DI', 'DII', 'DIII', 'DIV/S1', 'S2', 'S3'],
+			colors: [
+				'#b3006e',
+				'#99005e',
+				'#80004f',
+				'#66003f',
+				'#4c002f',
+				'#33001f',
+				'#e6008d',
+			],
+			plotOptions: {
+				pie: {
+					startAngle: -90,
+					endAngle: 270
+				}
+			},
+			dataLabels: {
+				enabled: true
+			},
+			fill: {
+				type: 'gradient',
+			},
+			legend: {
+				position: 'bottom',
+				formatter: function (val, opts) {
+					return val + " - " + opts.w.globals.series[opts.seriesIndex]
+				}
+			},
+			title: {
+				text: ''
+			},
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					chart: {
+						width: 200
+					},
+					legend: {
+						position: 'bottom'
+					}
+				}
+			}]
+		};
+
+		var chart = new ApexCharts(document.querySelector("#chartSatu"), options);
+		chart.render();
+
+
+		var options = {
+			series: [44, 55, 41, 17, 15, 78, 9, 10, 10],
+			chart: {
+				width: 380,
+				type: 'donut',
+			},
+			labels: ['15-19', '20-24', '25-29', '30-34', '35-39', '40-44',
+				'45-49', '50-54', '55-59',
+			],
+			colors: [
+				'#b3006e',
+				'#99005e',
+				'#80004f',
+				'#66003f',
+				'#4c002f',
+				'#33001f',
+				'#e6008d',
+			],
+			plotOptions: {
+				pie: {
+					startAngle: -90,
+					endAngle: 270
+				}
+			},
+			dataLabels: {
+				enabled: true
+			},
+			fill: {
+				type: 'gradient',
+			},
+			legend: {
+				position: 'bottom',
+				formatter: function (val, opts) {
+					return val + " - " + opts.w.globals.series[opts.seriesIndex]
+				}
+			},
+			title: {
+				text: ''
+			},
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					chart: {
+						width: 200
+					},
+					legend: {
+						position: 'bottom'
+					}
+				}
+			}]
+		};
+
+		var chart = new ApexCharts(document.querySelector("#chartDua"), options);
+		chart.render();
+	</script>
+</body>
+
+</html>
