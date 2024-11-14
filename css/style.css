@@ -15575,13 +15575,13 @@ fieldset:disabled .btn {
 }
 
 .section-breadcrumb {
-  background-image: url('../img/1.png');
+  background-image: url('../img/survei/1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-top: 1px solid #fbe6ed;
   margin-top: 10px;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
   box-shadow: 0px 8px 18px 0px rgba(219, 47, 105, 0.04);
 }
